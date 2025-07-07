@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>theTetsujinConverter Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="dashboard.js"></script>
+</head>
+<body>
+  <div id="login-screen">
+    <h1>MATRIX ACCESS</h1>
+    <input id="access-code" placeholder="Enter Code" type="password">
+    <button onclick="authorize()">ENTER</button>
+  </div>
+  <div id="dashboard" style="display:none;">
+    <h2>Welcome Hacker 077</h2>
+    <button onclick="connectWallet()">🔌 Connect Wallet</button>
+    <button onclick="checkBalance()">💰 Check Balance</button>
+    <button onclick="fetchTxHistory()">📜 View TX History</button>
+    <div id="output"></div>
+  </div>
+</body>
+</html>
